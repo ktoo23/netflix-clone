@@ -177,7 +177,7 @@ img {
     color: #fff;
 }
 
-/* Tabs-content */
+/* Tab content */
 .tab-content {
     padding: 3rem 0;
     background: #000;
@@ -192,10 +192,38 @@ img {
     justify-content: center;
 }
 
+#tab-2-content .tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom > div {
+    text-align: center;
+}
+
 /* Text */
 .text-lg {
     font-size: 1.8rem;
     color: #fff;
+}
+
+.text-md {
+    font-size: 1.5rem;
+}
+
+.text-dark {
+    color: #999
 }
 
 /* Container */
