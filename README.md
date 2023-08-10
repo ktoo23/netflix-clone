@@ -2,11 +2,12 @@
 
 HTML/CSS
 
-🔗 css 속성 설정 시 기본 설정
+# <h3>🔗 css 속성 설정 시 기본 설정
 
 : 브라우저가 자동으로 padding, margin을 부여하기 때문에 미리 값을 조정한다.
 
-- {
+```javascript
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,8 +20,9 @@ list-style: none;
 a {
 text-decoration: none;
 }
+```
 
-🔗 `background` 속성
+# <h3>🔗 `background` 속성
 
 1. background-color: 배경 색상
 
@@ -46,8 +48,39 @@ text-decoration: none;
 `scroll`: 주어진 영역과 함께 스크롤된다.
 `fixed`: 영역이 스크롤되더라도 고정된다.
 
-🔗 background 단축 속성
+####🔗 background 단축 속성
 
 주어진 속성을 함께 사용할 수 있다.
 
-예) background: url('../img/background.jpg') no-repeat center center/cover;
+예)
+
+```javascript
+background: url('../img/background.jpg') no-repeat center center/cover;
+```
+
+# <h3>🔗 box-shadow: 요소에 그림자 추가
+
+1. `offset-x` : 양수 - 오른쪽, 음수 - 왼쪽
+2. `offset-y` : 양수 - 아래쪽, 음수 - 위쪽
+3. `blur-radius`: 숫자가 커질수록, 블러 처리되어 흐려진다.
+4. `spread-radius`: 숫자가 커질수록, 그림자의 크기가 커진다.
+5. `color`: 그림자의 색깔
+6. `inset`: 그림자가 요소의 바깥쪽이 아닌 안쪽에 생성된다.
+
+```javascript
+box-shadow: inset offset-x offset-y blur-radius spread-radius color
+
+box-shadow: 5px 5px gray;
+// 오른쪽 5px, 아래쪽 5px
+
+box-shadow: 5px 5px 5px;
+// 블러 추가
+
+// 여러 개의 그림자 생성은 ,(콤마)로 구분해주면 된다.
+box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+```
+
+# <h3>🔗 line-height: 줄 높이
+
+# <h3>🔗 border-spacing: 셀 테두리 간의 간격
+border-collapse: seperate일 때 작동한다.
