@@ -1,5 +1,6 @@
 :root {
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 * {
@@ -136,4 +137,37 @@ img {
     font-size: 1.5rem;
     padding: 1.2rem 2.1rem;
     text-transform: uppercase;
+}
+
+/* Tabs */
+.tabs {
+    background: var(--dark-color);
+    border-bottom: 3px solid #3d3d3d;
+    padding-top: 1rem;
+}
+
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+}
+.tabs .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs p {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+    padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+    cursor: pointer;
+    color: #fff;
 }
