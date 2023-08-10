@@ -1,3 +1,4 @@
+/* 기본 설정 */
 :root {
     --primary-color: #e50914;
     --dark-color: #141414;
@@ -29,6 +30,7 @@ a {
     text-decoration: none;
 }
 
+/* 1rem은 기본적으로 경로 HTML 요소의 글꼴 크기의 픽셀 수와 동일 */
 p {
     margin: 0.5rem 0;
 }
@@ -38,6 +40,11 @@ img {
 }
 
 /* background: url no-repeat center center/cover */
+/* 
+화면의 전체 높이는 100개 
+전체에서 93만큼만 차지하려면 93vh
+*/
+/* position:relative - 안에 어떤 것을 위치시킬 때  */
 .showcase {
     background: url('../img/background.jpg') no-repeat center center/cover;
     width: 100%;
@@ -57,6 +64,12 @@ img {
     box-shadow: inset 150px 100px 150px #121111, inset -150px -100px 150px #000000;
 
 }
+
+/* 
+가장 가까운 부모 요소 내부에 위치를 지정하고 position:relative
+상단에 표시되는 상대 위치를 가지고 있으므로 그 내부에 위치를 지정 position:absolute
+ */
+
 .showcase-top {
     position: relative;
     height: 90px;
@@ -154,6 +167,8 @@ img {
 .tab-border {
     border-bottom: var(--primary-color) 4px solid;
 }
+
+/* 자식들이 grid를 가지길 원하면 직계 부모에 display: grid */
 .tabs .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -212,6 +227,14 @@ img {
     text-align: center;
 }
 
+/* Hide content initially */
+#tab-1-content, #tab-2-content, #tab-3-content {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
 
 /* Table */
 .table {
