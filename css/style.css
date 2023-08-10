@@ -212,6 +212,33 @@ img {
     text-align: center;
 }
 
+
+/* Table */
+.table {
+    margin-top: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+.table tbody tr td {
+    color: #999;
+    padding: 0.8rem;
+    text-align: center;
+}
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+
 /* Text */
 .text-lg {
     font-size: 1.8rem;
@@ -226,6 +253,9 @@ img {
     color: #999
 }
 
+.text-center {
+    text-align: center;
+}
 /* Container */
 .container {
     max-width: 70%;
