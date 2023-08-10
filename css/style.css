@@ -316,6 +316,7 @@ img {
     font-size: 1rem;
 }
 
+/* media query */
 @media (max-width: 960px) {
     .showcase {
         height: 70vh;
