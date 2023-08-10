@@ -2,7 +2,7 @@
 
 HTML/CSS
 
-####🔗 css 속성 설정 시 기본 설정
+# <h3>🔗 css 속성 설정 시 기본 설정
 
 : 브라우저가 자동으로 padding, margin을 부여하기 때문에 미리 값을 조정한다.
 
@@ -22,7 +22,7 @@ text-decoration: none;
 }
 ```
 
-####🔗 `background` 속성
+# <h3>🔗 `background` 속성
 
 1. background-color: 배경 색상
 
@@ -48,7 +48,7 @@ text-decoration: none;
 `scroll`: 주어진 영역과 함께 스크롤된다.
 `fixed`: 영역이 스크롤되더라도 고정된다.
 
-####🔗 background 단축 속성
+# <h3>🔗 background 단축 속성
 
 주어진 속성을 함께 사용할 수 있다.
 
@@ -58,7 +58,7 @@ text-decoration: none;
 background: url('../img/background.jpg') no-repeat center center/cover;
 ```
 
-####🔗 box-shadow: 요소에 그림자 추가
+# <h3>🔗 box-shadow: 요소에 그림자 추가
 
 1. `offset-x` : 양수 - 오른쪽, 음수 - 왼쪽
 2. `offset-y` : 양수 - 아래쪽, 음수 - 위쪽
@@ -80,7 +80,7 @@ box-shadow: 5px 5px 5px;
 box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 ```
 
-####🔗 line-height: 줄 높이
+# <h3>🔗 line-height: 줄 높이
 
-####🔗 border-spacing: 셀 테두리 간의 간격
+# <h3>🔗 border-spacing: 셀 테두리 간의 간격
 border-collapse: seperate일 때 작동한다.
