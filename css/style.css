@@ -134,8 +134,13 @@ img {
 }
 
 .btn-xl {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1.2rem 2.1rem;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -170,4 +175,33 @@ img {
 .tabs .container > div:hover {
     cursor: pointer;
     color: #fff;
+}
+
+/* Tabs-content */
+.tab-content {
+    padding: 3rem 0;
+    background: #000;
+    color: #fff;
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text */
+.text-lg {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
 }
